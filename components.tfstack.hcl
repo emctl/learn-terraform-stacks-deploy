@@ -54,7 +54,7 @@ component "api_gateway" {
 component "vpc" {
   for_each = var.regions
 
-  source  = "aws-terraform-modules/vpc"
+  source  = "terraform-aws-modules/vpc/aws"
   version = "5.19.0"
 
   inputs = {
